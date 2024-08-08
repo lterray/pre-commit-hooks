@@ -5,7 +5,8 @@ setup(
     name='pre-commit-hooks-bandit',
     description='A pre-commit hook to parse branch name to find ticket id to prepend to commit message',
     url='https://github.com/lterray/pre-commit-hooks',
-    version='0.0.1',
+    version='0.0.3',
+    py_modules=["prepend_numeric_ticket_id"],
 
     author='Laszlo Terray',
 
@@ -19,7 +20,7 @@ setup(
     install_requires=[],
     entry_points={
         'console_scripts': [
-            'prepend_numeric_ticket_id = pre_commit_hooks.prepend_numeric_ticket_id:main',
+            'prepend_numeric_ticket_id = prepend_numeric_ticket_id:main',
         ],
     },
 )
