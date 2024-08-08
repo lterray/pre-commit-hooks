@@ -18,6 +18,7 @@ def main():
             print(f'ticket_id: {ticket_id}')
 
             # Path to the commit message file
+            print(f'sys.argv: {sys.argv}')
             commit_msg_filepath = sys.argv[1]
 
             with open(commit_msg_filepath, 'r+') as f:
