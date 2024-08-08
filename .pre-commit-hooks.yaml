@@ -1,8 +1,7 @@
-yaml
-  - id: numeric-ticket-id-to-prepare-commit-msg
-    name: numeric-ticket-id-to-prepare-commit-msg
-    description: This hook tries to parse out numeric ticket id from branch name to prepend to commit message
-    entry: prepend_numeric_ticket_id
-    language: python
-    stages: [prepare-commit-msg]
-    types: [python]
+- id: numeric-ticket-id-to-prepare-commit-msg
+  name: numeric-ticket-id-to-prepare-commit-msg
+  description: This hook tries to parse out numeric ticket id from branch name to prepend to commit message
+  entry: prepend_numeric_ticket_id
+  language: python
+  stages: [prepare-commit-msg]
+  types: [python]
