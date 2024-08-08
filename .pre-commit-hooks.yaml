@@ -4,4 +4,4 @@
   entry: prepend_numeric_ticket_id
   language: python
   stages: [prepare-commit-msg]
-  verbose: true
+  always_run: true
